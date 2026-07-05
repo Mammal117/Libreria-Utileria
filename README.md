@@ -1,4 +1,4 @@
-# utileria.js
+# Utileria.js
 
 Actividad: libreria-Utileria
 
@@ -6,7 +6,7 @@ Alumn: Ortiz Bautista Josue Ahuitz
 
 N.C:2161187
 
-Profesora: ADELINA MARTINEZ
+Profesora: Ing. Adelina Martínez Nieto
 
 
 Libreria JavaScript de funciones puras (sin frameworks, sin componentes visuales) para validar datos de formularios, calcular edades y formatear informacion. Resuelve un problema muy comun en el desarrollo web: repetir la misma logica de validacion una y otra vez en distintos formularios. Con utileria.js, esa logica vive en un solo lugar y se reutiliza en cualquier pagina con solo importar el script.
