@@ -315,6 +315,4 @@ El modal necesita estas reglas en styles.css para permanecer oculto hasta que el
 
 ---
 
- Cumplimiento con la rubrica
-
 Las 6 funciones obligatorias estan implementadas y documentadas correctamente. El formulario de index.html usa las 6 validaciones, incluyendo validarLongitud() sobre el campo numero. La ventana modal (#modalEdad) muestra la edad calculada al registrarse con exito, y ya cuenta con el CSS de overlay necesario para funcionar como ventana flotante. El archivo login.html usa validarPassword y validarCorreo, y ademas simula un inicio de sesion mostrando un mensaje de bienvenida. Las 2 funciones adicionales de invencion propia (validarTelefono y generarNombreUsuario) tambien estan completas y documentadas igual que las obligatorias.
