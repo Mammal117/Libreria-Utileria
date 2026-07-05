@@ -1,12 +1,19 @@
 # utileria.js
 
-**Autor:** Adelina Martinez
+Actividad: libreria-Utileria
+
+Alumn: Ortiz Bautista Josue Ahuitz 
+
+N.C:2161187
+
+Profesora: ADELINA MARTINEZ
+
 
 Libreria JavaScript de funciones puras (sin frameworks, sin componentes visuales) para validar datos de formularios, calcular edades y formatear informacion. Resuelve un problema muy comun en el desarrollo web: repetir la misma logica de validacion una y otra vez en distintos formularios. Con utileria.js, esa logica vive en un solo lugar y se reutiliza en cualquier pagina con solo importar el script.
 
 ---
 
-## Instalacion
+ Instalacion
 
 1. Descarga o clona este repositorio.
 2. Coloca el archivo `utileria.js` dentro de tu carpeta `/js`.
@@ -22,7 +29,7 @@ Listo. Todas las funciones quedan disponibles globalmente en esa pagina.
 
 ## Uso con ejemplos de codigo
 
-### 1. validarCorreo(correo)
+ 1. validarCorreo(correo)
 Valida que una cadena tenga formato de correo electronico.
 
 ```javascript
@@ -37,7 +44,7 @@ validarCorreo("juan@gmail.com"); // true
 validarCorreo("juan@gmail");     // false
 ```
 
-### 2. soloLetras(texto)
+ 2. soloLetras(texto)
 Valida que un texto contenga solo letras (incluye vocales acentuadas y ene con tilde).
 
 ```javascript
@@ -52,7 +59,7 @@ soloLetras("José Pérez"); // true
 soloLetras("Ana2");       // false
 ```
 
-### 3. validarLongitud(numero, maxLongitud)
+ 3. validarLongitud(numero, maxLongitud)
 Valida que la cantidad de digitos de un numero no supere un maximo.
 
 ```javascript
@@ -67,7 +74,7 @@ validarLongitud(12345, 5);  // true
 validarLongitud(123456, 5); // false
 ```
 
-### 4. calcularEdad(fechaNacimiento)
+ 4. calcularEdad(fechaNacimiento)
 Calcula la edad en anios completos a partir de una fecha de nacimiento.
 
 ```javascript
@@ -93,7 +100,7 @@ function calcularEdad(fechaNacimiento) {
 calcularEdad("2000-05-10"); // Ej: 26 (depende de la fecha actual)
 ```
 
-### 5. esMayorDeEdad(fechaNacimiento)
+ 5. esMayorDeEdad(fechaNacimiento)
 Valida si una persona es mayor de edad (18 anios o mas).
 
 ```javascript
@@ -108,7 +115,7 @@ esMayorDeEdad("2000-05-10"); // true
 esMayorDeEdad("2015-05-10"); // false
 ```
 
-### 6. validarPassword(password)
+ 6. validarPassword(password)
 Valida que una contrasena tenga minimo 8 caracteres, mayuscula, minuscula, numero y caracter especial.
 
 ```javascript
@@ -131,9 +138,9 @@ validarPassword("abcdefgh"); // false
 
 ---
 
-## Seccion libre - funciones propias
+ Seccion libre - funciones propias
 
-### 7. generarNombreUsuario(nombreCompleto)
+ 7. generarNombreUsuario(nombreCompleto)
 Problema que resuelve: en un registro, sugerir automaticamente un nombre de usuario a partir del nombre completo (igual que hacen Gmail, Instagram, etc.), en vez de que el usuario tenga que pensarlo desde cero.
 
 ```javascript
@@ -158,7 +165,7 @@ function generarNombreUsuario(nombreCompleto) {
 generarNombreUsuario("Ana López"); // ej: "analopez482"
 ```
 
-### 8. validarTelefono(telefono)
+ 8. validarTelefono(telefono)
 Problema que resuelve: evitar que se guarden numeros telefonicos incompletos o con letras en formularios de contacto/registro. Permite que el usuario escriba espacios o guiones, los cuales se ignoran al validar.
 
 ```javascript
@@ -176,12 +183,12 @@ validarTelefono("12345");         // false
 
 ---
 
-## Integracion
+ Integracion
 
 - **index.html** - Formulario de registro que usa las 8 funciones (nombre, correo, telefono, numero, fecha de nacimiento, contrasena) y muestra la edad calculada dentro de una ventana modal al registrarse con exito.
 - **login.html** - Formulario de inicio de sesion que usa validarCorreo() y validarPassword(), y simula un inicio de sesion mostrando un mensaje de bienvenida en un modal.
 
-### IDs de los campos en index.html
+ IDs de los campos en index.html
 
 Cada input del formulario de registro debe llevar exactamente este id para conectar con utileria.js (JavaScript distingue mayusculas de minusculas). A continuacion se explica campo por campo:
 
@@ -193,7 +200,7 @@ Cada input del formulario de registro debe llevar exactamente este id para conec
 - **Contrasena**: input de tipo password, con id="password". La valida la funcion validarPassword().
 - **Usuario sugerido (resultado, de solo lectura)**: input de tipo text, con id="resultadoUsuario". Se llena automaticamente con el resultado de generarNombreUsuario().
 
-### Script de integracion en index.html (procesarFormulario)
+ Script de integracion en index.html (procesarFormulario)
 
 Este es el bloque que conecta el formulario de registro con las 6 funciones obligatorias mas las 2 propias. Valida cada campo y, si todo es correcto, calcula la edad, la muestra en el modal y sugiere el nombre de usuario:
 
@@ -245,7 +252,7 @@ function cerrarModal() {
 }
 ```
 
-### Script de integracion en login.html (iniciarSesion)
+ Script de integracion en login.html (iniciarSesion)
 
 Este bloque conecta el formulario de login con validarCorreo() y validarPassword(). Si ambos campos son validos, simula un inicio de sesion mostrando un mensaje de bienvenida en el modal (no hay backend ni base de datos real, solo se valida el formato):
 
@@ -275,7 +282,7 @@ function cerrarModal() {
 }
 ```
 
-### CSS requerido para que el modal funcione
+ CSS requerido para que el modal funcione
 
 El modal necesita estas reglas en styles.css para permanecer oculto hasta que el registro o el login sean exitosos, y aparecer como ventana flotante centrada (no como texto fijo en la pagina):
 
@@ -308,6 +315,6 @@ El modal necesita estas reglas en styles.css para permanecer oculto hasta que el
 
 ---
 
-## Cumplimiento con la rubrica
+ Cumplimiento con la rubrica
 
 Las 6 funciones obligatorias estan implementadas y documentadas correctamente. El formulario de index.html usa las 6 validaciones, incluyendo validarLongitud() sobre el campo numero. La ventana modal (#modalEdad) muestra la edad calculada al registrarse con exito, y ya cuenta con el CSS de overlay necesario para funcionar como ventana flotante. El archivo login.html usa validarPassword y validarCorreo, y ademas simula un inicio de sesion mostrando un mensaje de bienvenida. Las 2 funciones adicionales de invencion propia (validarTelefono y generarNombreUsuario) tambien estan completas y documentadas igual que las obligatorias.
