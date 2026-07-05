@@ -320,6 +320,18 @@ El modal necesita estas reglas en styles.css para permanecer oculto hasta que el
 <img width="1907" height="955" alt="image" src="https://github.com/user-attachments/assets/f0447d14-a674-461a-aee7-cc5355e13fef" />
 <img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/823444f2-f446-4148-bfe4-9d8536694eb6" />
 
+
+¿Qué problema resuelve este formulario?
+Cuando alguien se registra en un sitio web, es común que cometa errores sin darse cuenta: escribe su correo mal, elige una contraseña débil y fácil de adivinar, olvida completar algún campo, o incluso mete letras donde debería ir un número de teléfono. Sin una validación adecuada, esos datos incorrectos terminan guardándose tal cual, generando cuentas con información inválida o insegura.
+Este formulario de registro resuelve ese problema validando cada campo en tiempo real, antes de aceptar el registro:
+
+Verifica que el nombre contenga solo letras, evitando números o símbolos por error.
+Confirma que el correo electrónico tenga un formato válido.
+Revisa que el teléfono tenga exactamente 10 dígitos.
+Obliga a que la contraseña sea realmente segura (mayúscula, minúscula, número y carácter especial).
+Calcula automáticamente la edad a partir de la fecha de nacimiento y bloquea el registro si la persona es menor de edad.
+Como valor agregado, sugiere un nombre de usuario automáticamente a partir del nombre ingresado, ahorrándole ese paso al usuario.
+
 ---
 
 Las 6 funciones obligatorias estan implementadas y documentadas correctamente. El formulario de index.html usa las 6 validaciones, incluyendo validarLongitud() sobre el campo numero. La ventana modal (#modalEdad) muestra la edad calculada al registrarse con exito, y ya cuenta con el CSS de overlay necesario para funcionar como ventana flotante. El archivo login.html usa validarPassword y validarCorreo, y ademas simula un inicio de sesion mostrando un mensaje de bienvenida. Las 2 funciones adicionales de invencion propia (validarTelefono y generarNombreUsuario) tambien estan completas y documentadas igual que las obligatorias.
