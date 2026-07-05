@@ -312,6 +312,8 @@ El modal necesita estas reglas en styles.css para permanecer oculto hasta que el
     box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 ```
+<img width="1907" height="955" alt="image" src="https://github.com/user-attachments/assets/f0447d14-a674-461a-aee7-cc5355e13fef" />
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/823444f2-f446-4148-bfe4-9d8536694eb6" />
 
 ---
 
