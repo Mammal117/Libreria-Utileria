@@ -27,7 +27,9 @@
         <input type="text" id="telefono"  placeholder="Eje: 951 243 09 84">
 
         <label for="numero">Numero favorito:</label>
-        <input type="number" id="numero"  placeholder="Eje:11 ">
+        <input type="number" id="numero" min="0" step="1" 
+    onkeydown="return !['-','+','e','E'].includes(event.key)" 
+    placeholder="Eje: 12345">
 
          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fechaNacimiento">
@@ -48,7 +50,7 @@
 
  <div class="modal-fondo" id="modalEdad">
         <div class="modal-caja">
-            <h2>Registro exitoso</h2>
+            <h2>Acesso exitoso</h2>
             <p id="mensajeModal"></p>
             <button type="button" onclick="cerrarModal()">Cerrar</button>
         </div>
