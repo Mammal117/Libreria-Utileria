@@ -51,7 +51,7 @@ function validarPassword(password) {
 
     return tieneLongitudMinima && tieneMayuscula && tieneMinuscula && tieneNumero && tieneEspecial;
 }
-
+// 2 funciones libres mias
 function generarNombreUsuario(nombreCompleto) {
     if (typeof nombreCompleto !== "string" || nombreCompleto.trim() === "") return "";
 
@@ -150,6 +150,4 @@ function procesarFormulario() {
         document.getElementById("modalEdad").classList.add("activo");
     }
 
-    function cerrarModal() {
-        document.getElementById("modalEdad").classList.remove("activo");
-    }
+   
